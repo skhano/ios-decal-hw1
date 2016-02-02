@@ -23,28 +23,27 @@ class Foo {
 
 //: ### a) What data type is **words**, and what is the type of the data it can hold?
 
-
-//: [EXPLAIN YOUR ANSWER HERE]
+//: words is an array of String optionals, which means an array of nils and/or Strings.
 
 
 //: ### b) What is the type of **words[0]** annd **words[1]**.
 
 
-//: [EXPLAIN YOUR ANSWER HERE]
+//: either a nil or a String depending on what the user passes in.
 
 
 //: ### c) What is the type of **wordsA** and **wordsB?**? Why?
 
 
-//: [EXPLAIN YOUR ANSWER HERE]
+//: They are Strings because unwrapping a string gives you a string
 
 
 //: ## Q2: Variable Types and Function Types
 func arePalindromes(words: [String]) -> Bool! {
     let reversedWords = words.map() {String($0.characters.reverse())}
-    var numElements = words.count
+    let numElements = words.count
     
-    for let i = 0; i < numElements; i++ {
+    for var i = 0; i < numElements; i++ {
         if words[i] != reversedWords[i] {
             return false
         }
@@ -54,15 +53,15 @@ func arePalindromes(words: [String]) -> Bool! {
 //: ### What value should we expect to return?
 
 
-//: [EXPLAIN YOUR ANSWER HERE]
-
+//: Because let defines a constant variable, and you are trying to increment the variable, not ok!
+//: This should return a boolean unwrapped optional that tells if are Palindromes
 
 
 //: ## Q3: More functions, and object initialization
-func isAnagram(wordA: String, wordB: String) -> Bool? {
+func isAnagram(wordA: String, wordB: String) -> Bool {
     var countLetters : [Character : Int]
-    var lenA = wordA.characters.count
-    var lenB = wordB.characters.count
+    let lenA = wordA.characters.count
+    let lenB = wordB.characters.count
     
     if lenA != lenB {
         return false
@@ -89,20 +88,20 @@ func isAnagram(wordA: String, wordB: String) -> Bool? {
         }
     }
     
-    for (letter, count) in countLetters {
+    for (_, count) in countLetters {
         if count != 0 {
             return false
         }
     }
     
-    return nil
+    return true
 }
 //: ### The method above should be returning **true** or **false**. Debug the code so that
 //: ### this is true. You should edit the isAnagram and ONLY the isAnagram function. 
 //: ### What was wrong?
 
 
-//: [EXPLAIN YOUR ANSWER HERE]
+//: This code returned nil at the end instead of true, and it returned an optional when it didn't need to.
 
 
 //: ## Check Your Answers
