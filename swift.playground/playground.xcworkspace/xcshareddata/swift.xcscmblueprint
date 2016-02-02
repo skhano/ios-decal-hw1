@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "55CCDCB7A8583E671D8CF9FA82800CF6D50BD920",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "55CCDCB7A8583E671D8CF9FA82800CF6D50BD920" : 0,
+    "31C2C819D8AC10246B44B479BD5FD3AA2648AFEF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "35DE633B-FB9C-46EF-AB9F-09B8852BC14F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "55CCDCB7A8583E671D8CF9FA82800CF6D50BD920" : "ios-decal-hw1\/",
+    "31C2C819D8AC10246B44B479BD5FD3AA2648AFEF" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "swift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "swift.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/skhano\/ios-decal-hw1",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "31C2C819D8AC10246B44B479BD5FD3AA2648AFEF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/skhano\/ios-decal-hw1",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "55CCDCB7A8583E671D8CF9FA82800CF6D50BD920"
+    }
+  ]
+}
