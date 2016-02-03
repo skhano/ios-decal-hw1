@@ -35,7 +35,8 @@ class Foo {
 //: ### c) What is the type of **wordsA** and **wordsB?**? Why?
 
 
-//: They are Strings because unwrapping a string gives you a string
+//: They are Strings with values because unwrapping a string gives you a string, and the ! makes
+//: sure that they have a value.
 
 
 //: ## Q2: Variable Types and Function Types
